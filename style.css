@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* Colors */
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --medium-cyan: hsl(168, 34%, 41%);
+    --very-dark-blue: hsl(212, 27%, 19%);
+    --very-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url('./assets/desktop/image-header.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.container-menu {
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 150px;
+    width: 100%;
+}
+
+.menu-desktop ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-desktop li {
+    margin-right: 30px;
+    color: var(--white);
+    font-family: 'Barlow';
+    font-weight: 600;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.menu-desktop li:last-child {
+    background-color: var(--white);
+    padding: 12px;
+    color: var(--black);
+    border-radius: 19px;
+}
+
+.menu-desktop li:hover {
+    filter: brightness(0.9);
+}
+
+.menu-desktop li:last-child:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--white);
+}
+
+.content-banner {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content-banner .title-banner {
+    color: var(--white);
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.content-banner .arrow-down {
+    margin-top: 40px;
+    animation-name: arrowDown;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Animação */
+@keyframes arrowDown {
+    0% {
+        margin-top: 40px;
+    }
+
+    50% {
+        margin-top: 25px;
+    }
+
+    100% {
+        margin-top: 40px;
+    }
+}
