@@ -59,15 +59,15 @@ header {
 .menu-desktop li {
     margin-right: 30px;
     color: var(--white);
-    font-family: 'Barlow';
+    font-family: 'Barlow', sans-serif;
     font-weight: 600;
-    padding: 12px;
+    padding: 10px;
     cursor: pointer;
 }
 
 .menu-desktop li:last-child {
     background-color: var(--white);
-    padding: 12px;
+    padding: 10px;
     color: var(--black);
     border-radius: 19px;
 }
@@ -93,7 +93,7 @@ header {
 
 .content-banner .title-banner {
     color: var(--white);
-    font-family: 'Fraunces';
+    font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 60px;
     text-transform: uppercase;
@@ -107,6 +107,125 @@ header {
     animation-iteration-count: infinite;
 }
 
+section.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 500px;
+}
+
+section.gallery .only-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.only-text .title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--very-dark-blue);
+}
+
+.only-text .description {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    margin-top: 20px;
+    line-height: 27px;
+}
+
+.only-text a {
+    margin-top: 30px;
+    text-decoration: none;
+    font-family: 'Fraunces';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--very-dark-blue);
+}
+
+.shadow-yellow {
+    max-width: 140px;
+    width: 100%;
+    height: 5px;
+    box-shadow: 3px 10px 10px var(--yellow);
+    border-radius: 16px;
+    margin-top: -15px;
+    margin-left: -14px;
+}
+
+.shadow-soft-red {
+    max-width: 140px;
+    width: 100%;
+    height: 5px;
+    box-shadow: 3px 10px 10px var(--soft-red);
+    border-radius: 16px;
+    margin-top: -15px;
+    margin-left: -14px;
+}
+
+section.gallery .only-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.image-transform {
+    background-image: url('./assets/desktop/image-transform.jpg');
+}
+
+.image-stand-out {
+    background-image: url('./assets/desktop/image-stand-out.jpg');
+}
+
+section.gallery .mixed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    padding-top: 200px;
+    height: 520px;
+    background-size: cover;
+    background-position: center;
+}
+
+.mixed .title {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 35px;
+    margin-top: 40px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.mixed .description {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    line-height: 27px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.cyan {
+    color: var(--medium-cyan);
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+.image-graphic-design {
+    background-image: url('./assets/desktop/image-graphic-design.jpg');
+}
+
+.image-photography {
+    background-image: url('./assets/desktop/image-photography.jpg');
+}
 
 /* Animação */
 @keyframes arrowDown {
