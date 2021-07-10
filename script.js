@@ -33,7 +33,7 @@ const menuToggle = () => {
     if(mobileMenu.style.display === 'none') {
         setTimeout(() => {
             mobileMenu.style.display = 'block'
-        }, 2000)
+        }, 1000)
     } else {
         setTimeout(() => {
             mobileMenu.style.display = 'none'
