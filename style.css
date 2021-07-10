@@ -590,6 +590,30 @@ footer {
     height: 400px;
   }
 
+  section.gallery .image-transform{
+    order: 1;
+  }
+
+  section.gallery .two {
+    order: 2;
+  }
+
+  .image-stand-out {
+    order: 3;
+  }
+
+  section.gallery .four {
+    order: 4;
+  }
+
+  .image-graphic-design {
+    order: 5;
+  }
+
+  .image-photography {
+    order: 6;
+  }
+
   .only-text .title {
     font-size: 24px;
   }
